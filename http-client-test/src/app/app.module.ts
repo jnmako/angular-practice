@@ -4,6 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from '../app/page/home/home.component';
+import { UsersComponent } from '../app/page/users/users.component';
+import { NavbarComponent } from '../app/navbar/navbar.component';
+import { UserService } from './service/user.service';
+
 
 const appRoutes: Routes = [
 
@@ -11,7 +17,10 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    UsersComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -19,9 +28,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true }
-    )
+    ),
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,14 @@
+.navbar {
+    height: 60px;
+}
+
+.navbar-brand {
+font-size: 30px;
+color: rgb(233, 51, 27);
+font-weight: bold;
+font-family: sans-serif ;
+}
+
+.nav-link {
+    font-size: 20px;
+}

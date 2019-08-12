@@ -1,0 +1,39 @@
+<router-outlet></router-outlet>
+
+<h1>User stats</h1>
+<div class="container-fluid">
+  <div class="row text-center justify-content-around">
+    <div class="card border-primary col-3">
+      <div class="card-body text-primary">
+        <h5 class="card-title">Number of Users</h5>
+        <p class="card-text">The number of active users is <span
+            style="font-size:20px; color:red">{{numberOfActiveUsers}}</span>
+        </p>
+        <p class="card-text">The number of inactive users is <span
+            style="font-size:20px; color:red">{{numberOfInactiveUsers}}</span>
+        </p>
+        <p class="card-text">The number of all users is: <span
+            style="font-size:20px; color:red">{{numberOfAllUsers}}</span>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="card border-primary col-3">
+      <div class="card-body text-primary">
+        <h5 class="card-title">Total balance</h5>
+        <p class="card-text">The users' balance is <br> <span style="font-size:20px; color:red"> ${{ sumBalance }}
+          </span>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="card border-primary col-3">
+      <div class="card-body text-primary">
+        <h5 class="card-title">Apple fans</h5>
+        <p class="card-text"><span style="font-size:20px; color:red">{{ numberOfAppleLovers }} users' </span> <br>
+          favourite fruit is apple.
+        </p>
+      </div>
+    </div>
